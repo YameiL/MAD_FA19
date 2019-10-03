@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Yamei_lab4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mqo-nf-OGL">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wML-Uj-wQt">
+                                        <rect key="frame" x="20" y="20" width="696" height="374"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="LL5-WS-fij">
+                                                <rect key="frame" x="224.66666666666663" y="-20.666666666666657" width="247" height="415.33333333333326"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paycheck Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Mr-ik-Upp">
+                                                        <rect key="frame" x="45.666666666666657" y="0.0" width="155.66666666666666" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hour work" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEB-lh-A6g">
+                                                        <rect key="frame" x="84.000000000000028" y="75.333333333333343" width="79" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="110" translatesAutoresizingMaskIntoConstraints="NO" id="0Ca-b0-ogb">
+                                                        <rect key="frame" x="0.0" y="150.66666666666666" width="247" height="29"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 (hr)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tM-ek-b8Z">
+                                                                <rect key="frame" x="0.0" y="0.0" width="43" height="29"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Spj-iD-j8h">
+                                                                <rect key="frame" x="153.00000000000003" y="0.0" width="94" height="29"/>
+                                                                <connections>
+                                                                    <action selector="updateHour:" destination="BYZ-38-t0r" eventType="valueChanged" id="dwv-Oe-lXX"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="iyR-5N-e6b">
+                                                        <rect key="frame" x="49.000000000000028" y="234.66666666666666" width="148.66666666666666" height="105.33333333333334"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hourly payment ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVn-5n-ZQn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="148.66666666666666" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yk6-zU-xTW">
+                                                                <rect key="frame" x="53.666666666666629" y="75.333333333333314" width="41.333333333333343" height="30"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="efv-md-LDi">
+                                                        <rect key="frame" x="9" y="395" width="229" height="20.333333333333314"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total paycheck ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNU-nU-R4x">
+                                                                <rect key="frame" x="0.0" y="0.0" width="142" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKo-nQ-mPW">
+                                                                <rect key="frame" x="205.00000000000003" y="0.0" width="24" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="LL5-WS-fij" firstAttribute="centerX" secondItem="wML-Uj-wQt" secondAttribute="centerX" id="Kar-Wy-Gt2"/>
+                                            <constraint firstItem="LL5-WS-fij" firstAttribute="centerY" secondItem="wML-Uj-wQt" secondAttribute="centerY" id="WEi-aj-DVQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wML-Uj-wQt" secondAttribute="trailing" constant="20" id="D4e-uN-W7b"/>
+                                    <constraint firstAttribute="bottom" secondItem="wML-Uj-wQt" secondAttribute="bottom" constant="20" id="HIw-na-REj"/>
+                                    <constraint firstItem="wML-Uj-wQt" firstAttribute="top" secondItem="Mqo-nf-OGL" secondAttribute="top" constant="20" id="WPr-bJ-Bzz"/>
+                                    <constraint firstItem="wML-Uj-wQt" firstAttribute="centerX" secondItem="Mqo-nf-OGL" secondAttribute="centerX" id="fsm-iM-rdY"/>
+                                    <constraint firstItem="wML-Uj-wQt" firstAttribute="centerY" secondItem="Mqo-nf-OGL" secondAttribute="centerY" id="iyO-Nr-55V"/>
+                                    <constraint firstItem="wML-Uj-wQt" firstAttribute="leading" secondItem="Mqo-nf-OGL" secondAttribute="leading" constant="20" id="zhQ-zS-Rg6"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mqo-nf-OGL" secondAttribute="trailing" id="4cq-eH-GpU"/>
+                            <constraint firstAttribute="bottom" secondItem="Mqo-nf-OGL" secondAttribute="bottom" id="8R3-3d-g9F"/>
+                            <constraint firstItem="Mqo-nf-OGL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aKU-I3-4dq"/>
+                            <constraint firstItem="Mqo-nf-OGL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="u95-ga-lwi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="hourLabel" destination="9tM-ek-b8Z" id="p88-3m-tmm"/>
+                        <outlet property="hrPayment" destination="yk6-zU-xTW" id="Rmw-1D-peS"/>
+                        <outlet property="hrStepper" destination="Spj-iD-j8h" id="NoM-wS-Tjb"/>
+                        <outlet property="totalDue" destination="lKo-nQ-mPW" id="Jjw-yd-v47"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="24.776785714285712"/>
+        </scene>
+    </scenes>
+</document>
