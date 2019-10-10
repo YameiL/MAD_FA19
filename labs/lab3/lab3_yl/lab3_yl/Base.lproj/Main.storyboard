@@ -25,10 +25,10 @@
                                         <rect key="frame" x="20" y="20" width="374" height="778"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="aFG-1g-TID">
-                                                <rect key="frame" x="16" y="155.5" width="342" height="467"/>
+                                                <rect key="frame" x="16" y="225" width="342" height="328.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="o5Z-jh-jP9">
-                                                        <rect key="frame" x="0.0" y="0.0" width="342" height="321"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="342" height="182.5"/>
                                                         <subviews>
                                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="TWy-QF-VbX">
                                                                 <rect key="frame" x="86.5" y="0.0" width="169" height="29"/>
@@ -41,13 +41,13 @@
                                                                 </connections>
                                                             </segmentedControl>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chinamap" translatesAutoresizingMaskIntoConstraints="NO" id="b9o-CE-f78">
-                                                                <rect key="frame" x="74.5" y="87" width="193" height="154.50000000000003"/>
+                                                                <rect key="frame" x="161" y="87" width="20" height="16"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="b9o-CE-f78" secondAttribute="height" multiplier="693:555" id="AvB-NM-xRi"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cities of China" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0SH-t0-hpb">
-                                                                <rect key="frame" x="115.5" y="300.5" width="111.5" height="20.5"/>
+                                                                <rect key="frame" x="115.5" y="162" width="111.5" height="20.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -55,7 +55,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="ZCC-Fv-G2B">
-                                                        <rect key="frame" x="0.0" y="366" width="342" height="101"/>
+                                                        <rect key="frame" x="0.0" y="227.5" width="342" height="101"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QxQ-yW-2HX">
                                                                 <rect key="frame" x="0.0" y="0.0" width="342" height="30"/>
