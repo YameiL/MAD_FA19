@@ -5,11 +5,14 @@
 //  Created by Yamei Liao on 2019/10/9.
 //  Copyright © 2019 Yamei Liao. All rights reserved.
 //
+//source:https://stackoverflow.com/questions/49960757/swift-4-creating-a-multiple-choice-quiz-using-a-struct-major-flaw learnt struct .(count)
+// but I want my app to show user image of the trashes as I planned so it's not the same as a simple words quiz
 
 import UIKit
 
-//learnt this structure method in multip area
+//learnt this structure method online
 //When they want to build a data struture they use it and it applies to my app
+//how i understand it is to prep for buiding the data structure for quiz
 struct Trashes {
     //var differTrash : UIImage!
     //var Answers : [String]!
@@ -34,13 +37,17 @@ struct Trashes {
     }
 }
 
-//to create the list of trash
+//to create the list of trashn to store the image for my quesion
 class TrashBank{
     //list that is in the trashes sturct I created above
     var list = [Trashes]()
     
     init(){
-        //type trashes() in the append will nicely auto fill all the info that need to fulfill, so filled with the info that for my trash question including img, question and the right answer
+        
+        //because I created the struct of Trashes
+        //type trashes() in the append will nicely auto fill all the info that need to fulfill, so filled with the info that for my trash questions including img, question and the int that represent the right answer
+        //.append learnt in class of how it will add thing at the end of the list/arry
+        
         list.append(Trashes(image: "apple", questionText: "What type of trash is for a ate apple? ", pick1: "A", pick2: "B", pick3: "C", pick4: "D", tAnswer: 4))
         
         list.append(Trashes(image: "battery", questionText: "What type of trash is for a battery? ", pick1: "A", pick2: "B", pick3: "C", pick4: "D", tAnswer: 2))
@@ -59,6 +66,8 @@ class TrashBank{
     
 
 
+//all from leacture
+//book about swift 5
 
 class ViewController: UIViewController {
     
@@ -112,6 +121,9 @@ class ViewController: UIViewController {
     func updateInfo(){
     //wrong math
         //if questionNumber < allTrash.list.count{
+        //(. count) so I can use it to count how many question user have been through, to set it not over the number of the entire question list
+        // before i setted this if loop it over the list and crushed my app
+        
         if questionNumber <= allTrash.list.count - 1{
         // need to add a range other wise crash
             trashImage.image = UIImage(named: (allTrash.list[questionNumber].qimage))
@@ -123,6 +135,8 @@ class ViewController: UIViewController {
             pickedAnswer = allTrash.list[questionNumber].Answer//this is going to return an int
         }else{
             // make an alert at the end to show the game is over
+            //swift 5 - alert
+            // lecture & notes
             let popAlert = UIAlertController(title: "NICE JOB!", message: "You have finished the game. Your score is \(score).", preferredStyle: .alert)
             // make an acton button
             let startOver = UIAlertAction(title: "start over", style: .default, handler: {action in self.startAgain()})//instead of the .cancle we used in class use .default
