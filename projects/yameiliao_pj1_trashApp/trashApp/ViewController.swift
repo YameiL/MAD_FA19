@@ -150,7 +150,7 @@ class ViewController: UIViewController {
     func updateScore(){
         //Binary operator '+' cannot be applied to operands of type 'String' and 'Int'
         //ScoreL.text = "Score: " + score
-        ScoreL.text = "Score: " + "\(score)" //use \ to ignore
+        ScoreL.text = "Score: " + "\(score)" //use \ to ignore, and slove the problem since now both are string
         
         
     }
