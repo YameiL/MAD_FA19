@@ -11,7 +11,7 @@ import Foundation
 class Favorite {
     var favMovie : String?
     //var favAuthor : String?
-    //init (){
-        //favMovie = "Your favorite movie"
-    //}
+    init (){
+        favMovie = "Your favorite movie"
+    }
 }
