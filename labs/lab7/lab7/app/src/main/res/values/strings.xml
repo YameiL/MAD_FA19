@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Lab7</string>
+    <string name="heading">Find yourself a place to live</string>
+    <string name="toggle_on">Ohter</string>
+    <string name="toggle_off">Freshman</string>
+    <string-array name="houseType">
+        <item> </item>
+        <item>Dorms</item>
+        <item>OffCampusApartments</item>
+        <item>OffCampusHouses</item>
+    </string-array>
+    <string name="radio1">$</string>
+    <string name="radio2">$$</string>
+    <string name="radio3">$$$</string>
+    <string name="costexpectation">What is your cost expectation?</string>
+    <string name="roommates">How many roommates are you considering?</string>
+    <string name="checkbox1">single room</string>
+    <string name="checkbox2">one roommate</string>
+    <string name="checkbox3">two roommates</string>
+    <string name="checkbox4">three roommates</string>
+    <string name="buttomFind">FIND</string>
+</resources>
