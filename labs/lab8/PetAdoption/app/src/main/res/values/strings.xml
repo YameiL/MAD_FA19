@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PetAdoption</string>
+    <string name="heading">Find a Perfect Partner</string>
+    <string name="Find_type_text">Choose your animal preference</string>
+    <string-array name="animalType">
+        <item>Look for dogs</item>
+        <item>Look for cats</item>
+        <item>Look for other pets</item>
+    </string-array>
+    <string name="pet_image">CatDog</string>
+    <string name="title_activity_find">FindActivity</string>
+    <string name="suggested_adoption_place">This is your suggested place to find a partner</string>
+    <string name="find">FIND</string>
+</resources>
