@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--quiz game generally is using the LinearLayout -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -21,6 +22,8 @@
         android:textSize="18sp"
         android:layout_marginTop="60dp"/>
 
+
+<!--was trying to make different level of the quize -->
 <!--    <Spinner-->
 <!--        android:id="@+id/quizCate"-->
 <!--        android:layout_width="wrap_content"-->
