@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TrashItApp</string>
+    <string name="totalscore">Total Score : 333 </string>
+    <string name="resultLabelHold">3 / 5</string>
+    <string name="resultTitle">Quiz Result</string>
+    <string name="resultButtonText">Return</string>
+    <string name="trashTitle">Trash it Right</string>
+<!--    <string name="category">Select a quiz category</string>-->
+    <string name="category">This is an educational game that tells you different trash category.</string>
+    <string-array name="quiz_category">
+        <item>Easy</item> //0
+        <item>Medium</item>//1
+        <item>Hard</item>//2
+    </string-array>
+    <string name="start">Start the Quiz</string>
+    <string name="score">Score :</string>
+</resources>
