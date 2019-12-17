@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FinalBurrito</string>
+    <string name="heading">Burrito Builder</string>
+    <string name="buildButton">BUILD</string>
+    <string name="toggle_on">MEAT</string>
+    <string name="toggle_off">VEGGIE</string>
+    <string name="name">Name</string>
+    <string name="radio1">burrito</string>
+    <string name="radio2">taco</string>
+    <string-array name="street">
+        <item>Pearl Street</item>
+        <item>29th Street</item>
+        <item>The Hill</item>
+    </string-array>
+
+    <string name="salsa">Salsa</string>
+    <string name="sourCream">Sour Cream</string>
+    <string name="cheese">Cheese</string>
+    <string name="Guaca">Guacamole</string>
+    <string name="suggestionBtn">FIND BURRITO PLACE</string>
+    <string name="title_activity_burrito">BurritoActivity</string>
+    <string name="suggested_burrito">This is your suggested burrito shop</string>
+
+</resources>
